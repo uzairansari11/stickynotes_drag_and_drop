@@ -13,24 +13,29 @@ const StickyNote = ({
   onPin,
   position,
 }) => {
+  // State for managing editing mode and edited content of the note
   const [isEditing, setIsEditing] = useState(false);
   const [editedContent, setEditedContent] = useState(content);
-console.log(isPinned)
+
+  // Function to toggle editing mode when note is double-clicked
   const handleDoubleClick = () => {
     setIsEditing(true);
   };
 
+  // Function to handle saving edited content and exit editing mode
   const handleEdit = () => {
     onDoubleClick(id, editedContent);
     setIsEditing(false);
   };
 
+  // Function to handle changes in the textarea for note content
   const handleTextareaChange = (e) => {
     if (e.target.value.length <= 150) {
       setEditedContent(e.target.value);
     }
   };
 
+  // Styling for the note element based on position and other properties
   const noteStyles = {
     position: "absolute",
     backgroundColor: "#FFFF88",
@@ -46,6 +51,7 @@ console.log(isPinned)
     width: "200px", 
   };
 
+  // Styling for the text content within the note
   const textStyles = {
     width: "100%",
     overflowWrap: "break-word", 
@@ -54,7 +60,13 @@ console.log(isPinned)
     height:'150px'
   };
 
+  // Function to handle the drag start event for the note
   const handleDragStart = (e) => {
+    // Calculate offsets for smooth dragging and set data for the drag event
+    const offsetX = e.clientX - position.x;
+    const offsetY = e.clientY - position.y;
+    e.dataTransfer.setData("offsetX", offsetX);
+    e.dataTransfer.setData("offsetY", offsetY);
     e.dataTransfer.setData("notesId", id);
   };
 
@@ -66,6 +78,7 @@ console.log(isPinned)
       onDragStart={handleDragStart}
     >
       {isEditing ? (
+        // Render textarea for editing mode
         <>
           <textarea
             value={editedContent}
@@ -90,6 +103,7 @@ console.log(isPinned)
           </button>
         </>
       ) : (
+        // Render text content and control buttons when not in editing mode
         <>
           <div style={textStyles}>{content}</div>
           <div style={{ display: "flex", alignItems: "center" }}>
