@@ -1,0 +1,24 @@
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 0.2rem 1rem;
+}
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding:0rem 1rem;
+    border-radius: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    
+}
+.buttonDiv:hover{
+   cursor: pointer;
+   background-color: #DCF2F1;
+}
+.textStyle{
+    font-size: 1rem;
+    font-weight: 600;
+}
