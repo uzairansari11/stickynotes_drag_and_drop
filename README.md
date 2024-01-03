@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Sticky Notes Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple bulletin board application built using React JS, CSS, and JavaScript. It allows users to create, drag, edit, delete, and pin sticky notes on a virtual  board.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Check out the live demo [here](https://stickynotes-drag-and-drop.vercel.app/).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Draggable Notes**: All notes on the board are draggable, allowing users to reposition them as needed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add New Notes**: Users can add new notes by clicking on the "+" button.
 
-### `npm test`
+- **Delete Notes**: Delete unwanted notes by clicking on the "x" button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Edit Notes**: Click on the text of a note to start editing or edit button. 
 
-### `npm run build`
+- **Pin Notes**: Pin notes to make them non-draggable and prevent overlapping with other notes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Client:** 
+- React JS
+- CSS
+- JavaScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Follow these steps to run the project locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/uzairansari11/stickynotes_drag_and_drop.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
 
-### Code Splitting
+This command will start the development server, and you can access the application by opening your browser and navigating to http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
+# Main Screen
+![mobile](https://github.com/uzairansari11/stickynotes_drag_and_drop/assets/112272822/dd1c52c1-77b8-4d51-8ef2-757b5e4cda8e)
+<br />
+# Add Notes 
+![mobile (1)](https://github.com/uzairansari11/stickynotes_drag_and_drop/assets/112272822/b4dd7df5-54bb-425e-9c27-c514d07787cb)
+<br />
+# Edit Notes
+![mobile (2)](https://github.com/uzairansari11/stickynotes_drag_and_drop/assets/112272822/db72fd89-1b47-47c5-8eaa-2df4070bf73a)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
+Uzair Ansari
+uzairans532@gmail.com.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
