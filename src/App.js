@@ -19,6 +19,10 @@ const App = () => {
 
   
   const addNote = () => {
+    if(text.trim()===""){
+      alert("Please enter notes");
+      return;
+    }
     const DEFAULT_NOTE_WIDTH = 200;
     const DEFAULT_NOTE_HEIGHT = 150;
     
